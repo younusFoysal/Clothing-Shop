@@ -13,7 +13,7 @@ const categories = [
         image: '/categories/formal.png'
     },
     {
-        id: 'party',
+        id: 'Party',
         name: 'Party',
         image: '/categories/party.png'
     },
