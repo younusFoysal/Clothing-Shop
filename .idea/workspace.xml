@@ -1,32 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="" />
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Basic Pages done">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/categories/casual.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/categories/formal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/categories/gym.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/categories/party.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Fontspring-DEMO-integralcf-bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Fontspring-DEMO-integralcf-heavy.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Fontspring-DEMO-integralcf-medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Fontspring-DEMO-integralcf-regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products/08e2ff8a46be56aa933f031aed3abe75.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products/4a66d9ca1401101dee4cc689f8bb5ad2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products/SleeveShirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products/cshirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products/d5fcac5632cf6823570ca2d1d53d7d73.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products/d9029bd465a4c7158689ab1619693014.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products/pant1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products/tshirt1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CartItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FeaturedProducts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProductGrid.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/categories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/CartContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/products.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;younusFoysal&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/younusFoysal/Clothing-Shop.git&quot;,
+    &quot;accountId&quot;: &quot;7d4174a4-de1d-441b-ae48-928297f55341&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2rZHh86tpFdWCPIlEghcXydeEJb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/WebStrom Projects/AppifyDevs/clothingshop",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\WebStrom Projects\\AppifyDevs\\clothingshop\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -55,10 +129,27 @@
       <option name="presentableId" value="Default" />
       <updated>1736759792179</updated>
       <workItem from="1736759793217" duration="124000" />
+      <workItem from="1736759922932" duration="205000" />
+      <workItem from="1736792166161" duration="12363000" />
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <option name="closed" value="true" />
+      <created>1736760081398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736760081398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Init" />
+    <MESSAGE value="Basic Pages done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Pages done" />
   </component>
 </project>
