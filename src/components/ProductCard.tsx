@@ -1,12 +1,12 @@
 "use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import {ShoppingCart, Star, StarHalf} from 'lucide-react';
+import { Star, StarHalf} from 'lucide-react';
 import { Product } from '@/types';
-import { useCart } from '@/context/CartContext';
+
 
 export default function ProductCard({ product }: { product: Product }) {
-    const { addToCart } = useCart();
+    // const { addToCart } = useCart();
 
     const discountPercentage = product.discountPrice
         ? Math.round(((product.price - product.discountPrice) / product.price) * 100)

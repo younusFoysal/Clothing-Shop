@@ -5,7 +5,7 @@ const categories = [
     {
         id: 'casual',
         name: 'Casual',
-        image: '/categories/casual.png'
+        image: '/categories/casual1.png'
     },
     {
         id: 'formal',
@@ -63,7 +63,7 @@ export default function Categories() {
                            className="group relative flex h-48 items-end overflow-hidden rounded-3xl bg-white   md:h-80">
                             <div className="absolute">
                                 <Image
-                                    src={categories[0].image}
+                                    src={'/categories/casual1.png'}
                                     width={1000}
                                     height={1000}
                                     loading="lazy" alt="Photo by Minh Pham"

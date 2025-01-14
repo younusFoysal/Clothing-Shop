@@ -5,9 +5,11 @@ import Image from 'next/image';
 import { useCart } from '@/context/CartContext';
 import { useState } from 'react';
 import { Size } from '@/types';
+import {useParams} from "next/navigation";
 
-export default function ProductPage({ params }: { params: { id: string } }) {
-    const product = products.find(p => p.id === params.id) || products[0];
+export default function ProductPage() {
+    const { id } = useParams();
+    const product = products.find((p) => p.id === id) || products[0];
     const { addToCart } = useCart();
     const [selectedColor, setSelectedColor] = useState(product.colors[0]);
     const [selectedSize, setSelectedSize] = useState<Size>('medium');
