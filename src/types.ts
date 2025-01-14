@@ -8,6 +8,8 @@ export interface Product {
     rating: number;
     colors: string[];
     sizes: string[];
+    type: string;
+    style: string;
 }
 
 export type Size = 'small' | 'medium' | 'large' | 'x-large';
