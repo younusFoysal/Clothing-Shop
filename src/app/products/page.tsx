@@ -2,7 +2,7 @@
 import ProductGrid from '@/components/ProductGrid';
 import { products } from '@/data/products';
 import { useState, useMemo } from 'react';
-
+import { ChevronDown } from 'lucide-react';
 
 const clothTypes = ['T-Shirt', 'Shorts', 'Hoodie', 'Jeans'];
 const colors = [
@@ -30,12 +30,15 @@ const sizes = [
 ];
 const dressStyles = ['Casual', 'Formal', 'Party', 'Gym'];
 
+type SortOption = 'popular' | 'price-high' | 'price-low';
+
 export default function ProductsPage() {
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
     const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
     const [selectedColors, setSelectedColors] = useState<string[]>([]);
     const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
     const [selectedStyles, setSelectedStyles] = useState<string[]>([]);
+    const [sortBy, setSortBy] = useState<SortOption>('popular');
 
     const toggleType = (type: string) => {
         setSelectedTypes(prev =>
@@ -70,7 +73,7 @@ export default function ProductsPage() {
     };
 
     const filteredProducts = useMemo(() => {
-        return products.filter(product => {
+        let filtered = products.filter(product => {
             // Filter by type
             if (selectedTypes.length > 0 && !selectedTypes.includes(product.type)) {
                 return false;
@@ -98,8 +101,21 @@ export default function ProductsPage() {
 
             return true;
         });
-    }, [selectedTypes, priceRange, selectedColors, selectedSizes, selectedStyles]);
 
+        // Sort products
+        return filtered.sort((a, b) => {
+            switch (sortBy) {
+                case 'popular':
+                    return b.rating - a.rating;
+                case 'price-high':
+                    return b.price - a.price;
+                case 'price-low':
+                    return a.price - b.price;
+                default:
+                    return 0;
+            }
+        });
+    }, [selectedTypes, priceRange, selectedColors, selectedSizes, selectedStyles, sortBy]);
 
     return (
         <div className="container mx-auto px-4 py-8">
@@ -223,8 +239,22 @@ export default function ProductsPage() {
 
                 {/* Product Grid */}
                 <div className="flex-1">
-                    <div className="mb-4 text-gray-600">
-                        {filteredProducts.length} products found
+                    <div className="flex items-center justify-between mb-4">
+            <span className="text-gray-600">
+              {filteredProducts.length} products found
+            </span>
+                        <div className="relative">
+                            <select
+                                value={sortBy}
+                                onChange={(e) => setSortBy(e.target.value as SortOption)}
+                                className="appearance-none bg-white border rounded-lg px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                            >
+                                <option value="popular">Most Popular</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="price-low">Price: Low to High</option>
+                            </select>
+                            <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none text-gray-500" size={16} />
+                        </div>
                     </div>
                     <ProductGrid products={filteredProducts} />
                 </div>

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Fix" />
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Product Filter page added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +92,7 @@
       <workItem from="1736805929560" duration="96000" />
       <workItem from="1736847552833" duration="1238000" />
       <workItem from="1736856454939" duration="2174000" />
+      <workItem from="1736889320333" duration="1603000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -117,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736858370280</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Product Filter page added">
+      <option name="closed" value="true" />
+      <created>1736890931617</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736890931617</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +137,7 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Basic Pages done" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Product Filter page added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product Filter page added" />
   </component>
 </project>
