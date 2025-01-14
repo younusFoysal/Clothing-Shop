@@ -1,5 +1,6 @@
 "use client"
 import ProductGrid from '@/components/ProductGrid';
+import Pagination from '@/components/Pagination';
 import { products } from '@/data/products';
 import { useState, useMemo } from 'react';
 import { ChevronDown } from 'lucide-react';
@@ -32,6 +33,8 @@ const dressStyles = ['Casual', 'Formal', 'Party', 'Gym'];
 
 type SortOption = 'popular' | 'price-high' | 'price-low';
 
+const PRODUCTS_PER_PAGE = 4;
+
 export default function ProductsPage() {
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
     const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
@@ -39,6 +42,7 @@ export default function ProductsPage() {
     const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
     const [selectedStyles, setSelectedStyles] = useState<string[]>([]);
     const [sortBy, setSortBy] = useState<SortOption>('popular');
+    const [currentPage, setCurrentPage] = useState(1);
 
     const toggleType = (type: string) => {
         setSelectedTypes(prev =>
@@ -46,6 +50,7 @@ export default function ProductsPage() {
                 ? prev.filter(t => t !== type)
                 : [...prev, type]
         );
+        setCurrentPage(1); // Reset to first page when filter changes
     };
 
     const toggleColor = (color: string) => {
@@ -54,6 +59,7 @@ export default function ProductsPage() {
                 ? prev.filter(c => c !== color)
                 : [...prev, color]
         );
+        setCurrentPage(1);
     };
 
     const toggleSize = (size: string) => {
@@ -62,6 +68,7 @@ export default function ProductsPage() {
                 ? prev.filter(s => s !== size)
                 : [...prev, size]
         );
+        setCurrentPage(1);
     };
 
     const toggleStyle = (style: string) => {
@@ -70,39 +77,29 @@ export default function ProductsPage() {
                 ? prev.filter(s => s !== style)
                 : [...prev, style]
         );
+        setCurrentPage(1);
     };
 
     const filteredProducts = useMemo(() => {
-        let filtered = products.filter(product => {
-            // Filter by type
+        const filtered = products.filter(product => {
             if (selectedTypes.length > 0 && !selectedTypes.includes(product.type)) {
                 return false;
             }
-
-            // Filter by price range
             if (product.price < priceRange[0] || product.price > priceRange[1]) {
                 return false;
             }
-
-            // Filter by colors
             if (selectedColors.length > 0 && !product.colors.some(color => selectedColors.includes(color))) {
                 return false;
             }
-
-            // Filter by sizes
             if (selectedSizes.length > 0 && !product.sizes.some(size => selectedSizes.includes(size))) {
                 return false;
             }
-
-            // Filter by style
             if (selectedStyles.length > 0 && !selectedStyles.includes(product.style)) {
                 return false;
             }
-
             return true;
         });
 
-        // Sort products
         return filtered.sort((a, b) => {
             switch (sortBy) {
                 case 'popular':
@@ -117,12 +114,24 @@ export default function ProductsPage() {
         });
     }, [selectedTypes, priceRange, selectedColors, selectedSizes, selectedStyles, sortBy]);
 
+    const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
+    const paginatedProducts = filteredProducts.slice(
+        (currentPage - 1) * PRODUCTS_PER_PAGE,
+        currentPage * PRODUCTS_PER_PAGE
+    );
+
+    const handlePageChange = (page: number) => {
+        setCurrentPage(page);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <div className="container mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold mb-8">Our Products</h1>
             <div className="flex flex-col md:flex-row gap-8">
                 {/* Filters Sidebar */}
                 <div className="w-full md:w-64 space-y-6">
+                    {/* ... (previous filter code remains the same) ... */}
                     {/* Cloth Type */}
                     <div className="space-y-3">
                         <h3 className="font-semibold">Cloth Type</h3>
@@ -149,14 +158,20 @@ export default function ProductsPage() {
                                 <input
                                     type="number"
                                     value={priceRange[0]}
-                                    onChange={e => setPriceRange([Number(e.target.value), priceRange[1]])}
+                                    onChange={e => {
+                                        setPriceRange([Number(e.target.value), priceRange[1]]);
+                                        setCurrentPage(1);
+                                    }}
                                     className="w-full px-3 py-2 border rounded-lg"
                                     placeholder="Min"
                                 />
                                 <input
                                     type="number"
                                     value={priceRange[1]}
-                                    onChange={e => setPriceRange([priceRange[0], Number(e.target.value)])}
+                                    onChange={e => {
+                                        setPriceRange([priceRange[0], Number(e.target.value)]);
+                                        setCurrentPage(1);
+                                    }}
                                     className="w-full px-3 py-2 border rounded-lg"
                                     placeholder="Max"
                                 />
@@ -230,6 +245,7 @@ export default function ProductsPage() {
                             setSelectedColors([]);
                             setSelectedSizes([]);
                             setSelectedStyles([]);
+                            setCurrentPage(1);
                         }}
                         className="w-full bg-gray-100 text-gray-800 py-3 rounded-lg hover:bg-gray-200 transition-colors mb-2"
                     >
@@ -237,7 +253,7 @@ export default function ProductsPage() {
                     </button>
                 </div>
 
-                {/* Product Grid */}
+                {/* Product Grid and Pagination */}
                 <div className="flex-1">
                     <div className="flex items-center justify-between mb-4">
             <span className="text-gray-600">
@@ -246,7 +262,10 @@ export default function ProductsPage() {
                         <div className="relative">
                             <select
                                 value={sortBy}
-                                onChange={(e) => setSortBy(e.target.value as SortOption)}
+                                onChange={(e) => {
+                                    setSortBy(e.target.value as SortOption);
+                                    setCurrentPage(1);
+                                }}
                                 className="appearance-none bg-white border rounded-lg px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                             >
                                 <option value="popular">Most Popular</option>
@@ -256,7 +275,18 @@ export default function ProductsPage() {
                             <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none text-gray-500" size={16} />
                         </div>
                     </div>
-                    <ProductGrid products={filteredProducts} />
+
+                    <ProductGrid products={paginatedProducts} />
+
+                    {totalPages > 1 && (
+                        <div className="mt-8">
+                            <Pagination
+                                currentPage={currentPage}
+                                totalPages={totalPages}
+                                onPageChange={handlePageChange}
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
