@@ -5,17 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Nav Done">
-      <change afterPath="$PROJECT_DIR$/src/components/shared/navbar/IconButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/navbar/NavItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/navbar/NavOffer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/navbar/Navigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/navbar/SearchBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/navbar/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Testimonials.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TopSelling.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/Sponsors.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/testimonials/StarRating.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/testimonials/TestimonialCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/testimonials/TestimonialSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/testimonials/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/topProducts.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FeaturedProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/categories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +79,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/WebStrom Projects/AppifyDevs/clothingshop",
+    "last_opened_file_path": "D:/WebStrom Projects/Tasks/assignment-peres",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,6 +97,11 @@
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebStrom Projects\AppifyDevs\clothingshop\src\data" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -108,7 +128,7 @@
       <workItem from="1736891539831" duration="1676000" />
       <workItem from="1736893716187" duration="5000" />
       <workItem from="1736924970508" duration="29000" />
-      <workItem from="1737143781116" duration="3812000" />
+      <workItem from="1737143781116" duration="9408000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -166,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736893692384</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Nav Done">
+      <option name="closed" value="true" />
+      <created>1737147687226</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737147687226</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -49,7 +49,7 @@ export default function Categories() {
             {/*    ))}*/}
             {/*</div>*/}
 
-            <div className="bg-gray-100 h-full rounded-3xl py-6 sm:py-8 lg:py-14">
+            <div className="bg-[#F0F0F0] h-full rounded-3xl py-6 sm:py-8 lg:py-14">
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
                     <div className="mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12">
                         <div className="flex justify-center items-center">
@@ -57,7 +57,7 @@ export default function Categories() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
 
                         <Link href="#"
                            className="group relative flex h-48 items-end overflow-hidden rounded-3xl bg-white   md:h-80">
