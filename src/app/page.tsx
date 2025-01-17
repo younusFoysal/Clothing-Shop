@@ -7,7 +7,7 @@ import Categories from "@/components/categories";
 export default function Home() {
   return (
       <div className="space-y-16">
-        <Hero />
+        {/*<Hero />*/}
         <FeaturedProducts />
         <Categories />
       </div>

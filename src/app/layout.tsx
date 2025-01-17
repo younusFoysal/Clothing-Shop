@@ -5,6 +5,8 @@ import './fonts.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { CartProvider } from '@/context/CartContext';
+import {Navigation} from "@/components/shared/navbar/Navigation";
+import NavOffer from "@/components/shared/navbar/NavOffer";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +24,10 @@ export default function RootLayout({
         <html lang="en">
         <body className={inter.className}>
         <CartProvider>
-            <Navbar />
+
+            <NavOffer />
+            <Navigation/>
+            {/*<Navbar />*/}
             <main className="min-h-screen pt-16">{children}</main>
             <Footer />
         </CartProvider>
