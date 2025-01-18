@@ -66,7 +66,7 @@ const Testimonials = () => {
     };
 
     return (
-        <div className="container mx-auto mt-16 mb-16">
+        <div className="container mx-auto mt-16 mb-26">
             <div className="mb-4 flex items-center justify-start gap-8 sm:mb-8 md:mb-12">
                 <div className="flex justify-start items-center">
                     <h2 className="text-6xl text-start font-bold text-black lg:text-4xl "

@@ -1,9 +1,22 @@
 
 import {Footer} from "@/components/shared/footer/Footer";
+import {NewsletterSubscription} from "@/components/shared/newsletter/NewsletterSubscription";
+import * as React from "react";
 
 export default function FooterMain() {
+
+   
+
     return (
         <footer className="bg-[#F0F0F0] text-white">
+
+            <div className="absolute">
+            </div>
+
+            <div className="relative -top-24">
+                <NewsletterSubscription />
+            </div>
+
             <div className="container mx-auto px-4 py-12">
                     <Footer/>
                 <div className=" flex justify-between border-t-2 border-gray-200 mt-12 pt-4 text-center text-gray-400">
@@ -24,7 +37,7 @@ export default function FooterMain() {
                             <defs>
                                 <filter id="filter0_dd_20_320" x="0.811593" y="0.293736" width="64.9911"
                                         height="48.4071" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
+                                        colorInterpolationFilters="sRGB">
                                     <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                     <feColorMatrix in="SourceAlpha" type="matrix"
                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -68,7 +81,7 @@ export default function FooterMain() {
                             <defs>
                                 <filter id="filter0_dd_20_322" x="0.425851" y="0.293736" width="64.9911"
                                         height="48.4071" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
+                                        colorInterpolationFilters="sRGB">
                                     <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                     <feColorMatrix in="SourceAlpha" type="matrix"
                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -108,7 +121,7 @@ export default function FooterMain() {
                             <defs>
                                 <filter id="filter0_dd_20_324" x="0.0401087" y="0.293736" width="64.9911"
                                         height="48.4071" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
+                                        colorInterpolationFilters="sRGB">
                                     <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                     <feColorMatrix in="SourceAlpha" type="matrix"
                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -157,7 +170,7 @@ export default function FooterMain() {
                             <defs>
                                 <filter id="filter0_dd_20_326" x="0.654489" y="0.293736" width="64.9911"
                                         height="48.4071" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
+                                        colorInterpolationFilters="sRGB">
                                     <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                     <feColorMatrix in="SourceAlpha" type="matrix"
                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -212,7 +225,7 @@ export default function FooterMain() {
                             <defs>
                                 <filter id="filter0_dd_20_328" x="0.268746" y="0.293736" width="64.9911"
                                         height="48.4071" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
+                                        colorInterpolationFilters="sRGB">
                                     <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                     <feColorMatrix in="SourceAlpha" type="matrix"
                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
