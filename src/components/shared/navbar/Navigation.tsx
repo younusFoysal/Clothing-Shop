@@ -49,7 +49,7 @@ export const Navigation: React.FC = () => {
                 {isMenuOpen ? <X size={20}/> : <Menu size={20}/>}
             </button>
 
-            <Link href="/"  className="self-stretch items-start my-auto text-left text-3xl font-bold text-black">
+            <Link href="/"  className="self-stretch items-start my-auto text-left text-3xl font-bold text-black" style={{fontFamily: 'IntegralCF, sans-serif'}}>
                 SHOP.CO
             </Link>
             <div className=" hidden md:flex gap-6 items-center self-stretch my-auto text-base text-black min-w-[240px]">
@@ -58,10 +58,7 @@ export const Navigation: React.FC = () => {
                 ))}
             </div>
 
-            <SearchBar
-                placeholder="Search for products..."
-                iconSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/779bedb81dcbca5fbe0baa95c27f7200cb91c11371da183aee06ff2867ee4f88?apiKey=2a8fe5aa0c1a42eb8be3c8ad2390b608&"
-            />
+            <SearchBar placeholder="Search for products..."/>
 
             <div className="flex gap-3.5 items-start self-stretch my-auto">
 

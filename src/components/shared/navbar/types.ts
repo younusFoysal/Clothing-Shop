@@ -10,5 +10,4 @@ export interface IconButtonProps {
 
 export interface SearchBarProps {
     placeholder: string;
-    iconSrc: string;
 }

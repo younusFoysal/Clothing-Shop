@@ -2,11 +2,10 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import './fonts.css';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { CartProvider } from '@/context/CartContext';
 import {Navigation} from "@/components/shared/navbar/Navigation";
 import NavOffer from "@/components/shared/navbar/NavOffer";
+import FooterMain from "@/components/Footer";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,14 +21,14 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-        <body className="Satoshi">
+        <body className="satoshi">
         <CartProvider>
 
             <NavOffer />
             <Navigation/>
             {/*<Navbar />*/}
             <main className="min-h-screen pt-16">{children}</main>
-            <Footer />
+            <FooterMain />
         </CartProvider>
         </body>
         </html>

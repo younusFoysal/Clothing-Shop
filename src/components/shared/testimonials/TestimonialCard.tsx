@@ -10,7 +10,7 @@ export function TestimonialCard({ author, isVerified, content, rating }: Testimo
                     <StarRating count={rating} />
                     <div className="flex flex-col mt-4 w-full">
                         <div className="flex gap-1 items-center self-start text-xl font-bold leading-none text-black">
-                            <div className="self-stretch my-auto">{author}</div>
+                            <div className="font-semibold my-auto">{author}</div>
                             {isVerified && (
                                 <img
                                     loading="lazy"
@@ -20,7 +20,7 @@ export function TestimonialCard({ author, isVerified, content, rating }: Testimo
                                 />
                             )}
                         </div>
-                        <div className="mt-3 text-base leading-6 text-black text-opacity-60">
+                        <div className="mt-3 text-base font-normal leading-6 text-black text-opacity-60">
                             "{content}”
                         </div>
                     </div>

@@ -8,8 +8,8 @@ const NavOffer = () => {
                 <div></div>
 
                 <div className="grid grid-cols-1 justify-center items-center">
-                    <h1 className="text-white font-light text-center">Sign up and get 20% off to your first order.
-                        <span className=" ml-1 font-semibold underline">
+                    <h1 className="text-white font-light  text-sm text-center satoshi-light">Sign up and get 20% off to your first order.
+                        <span className=" ml-1 satoshi-bold underline">
                     Sign Up Now
                          </span>
                     </h1>

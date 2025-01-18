@@ -45,5 +45,30 @@ body {
   font-style: normal;
 }
 
+.satoshi {
+  font-family: 'Satoshi', sans-serif;
+}
+
+.satoshi-light {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 300;
+}
+
+.satoshi-regular {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+}
+
+.satoshi-medium {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+}
+
+.satoshi-bold {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+}
+
+
 
 
