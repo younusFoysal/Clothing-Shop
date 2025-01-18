@@ -1,12 +1,7 @@
 import React from 'react';
-import {SlArrowLeft, SlArrowRight} from "react-icons/sl";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import {FaArrowRight, FaBookOpen, FaRegHeart, FaStar} from "react-icons/fa";
-import {PiTimerFill} from "react-icons/pi";
-import {FaRegStarHalfStroke} from "react-icons/fa6";
-import {LuShoppingCart} from "react-icons/lu";
+import "slick-carousel/slick/slick-theme.css";;
 import {testimonials} from "@/data/testimonials";
 import {TestimonialCard} from "@/components/shared/testimonials/TestimonialCard";
 
