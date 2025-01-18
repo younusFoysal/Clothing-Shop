@@ -22,7 +22,6 @@ export const Navigation: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const itemCount = items.reduce((sum, item) => sum + item.quantity, 0);
-    const navigate =
 
     // Handle scroll effect
     useEffect(() => {

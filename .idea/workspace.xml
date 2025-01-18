@@ -4,33 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Nav Done">
-      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Satoshi-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testimonials.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSelling.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/Sponsors.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/testimonials/StarRating.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/testimonials/TestimonialCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/testimonials/TestimonialSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/testimonials/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/topProducts.ts" afterDir="false" />
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Banner Start">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FeaturedProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedProducts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonials.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/categories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/navbar/IconButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/navbar/IconButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/navbar/NavItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/navbar/NavItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/navbar/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/navbar/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/newsletter/EmailInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/newsletter/EmailInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/newsletter/NewsletterSubscription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/newsletter/NewsletterSubscription.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/testimonials/StarRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/testimonials/StarRating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/testimonials/TestimonialCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/testimonials/TestimonialCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/testimonials/TestimonialSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/testimonials/TestimonialSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -72,23 +61,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/WebStrom Projects/Tasks/assignment-peres",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\WebStrom Projects\\AppifyDevs\\clothingshop\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WebStrom Projects/Taskirsview&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStrom Projects\\AppifyDevs\\clothingshop\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -128,7 +117,9 @@
       <workItem from="1736891539831" duration="1676000" />
       <workItem from="1736893716187" duration="5000" />
       <workItem from="1736924970508" duration="29000" />
-      <workItem from="1737143781116" duration="9408000" />
+      <workItem from="1737143781116" duration="20725000" />
+      <workItem from="1737196802075" duration="18000" />
+      <workItem from="1737224389626" duration="3891000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -194,7 +185,39 @@
       <option name="project" value="LOCAL" />
       <updated>1737147687226</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Reviews added">
+      <option name="closed" value="true" />
+      <created>1737157125749</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737157125749</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Newsletter done">
+      <option name="closed" value="true" />
+      <created>1737158430767</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737158430767</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Footer  done">
+      <option name="closed" value="true" />
+      <created>1737162215617</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737162215617</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Banner Start">
+      <option name="closed" value="true" />
+      <created>1737164641257</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1737164641257</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +233,21 @@
     <MESSAGE value="pagination added" />
     <MESSAGE value="Nav Responsive added" />
     <MESSAGE value="Nav Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nav Done" />
+    <MESSAGE value="Reviews added" />
+    <MESSAGE value="Newsletter done" />
+    <MESSAGE value="Footer  done" />
+    <MESSAGE value="Banner Start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Banner Start" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/shared/navbar/IconButton.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

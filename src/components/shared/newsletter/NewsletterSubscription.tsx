@@ -4,7 +4,7 @@ import { EmailInput } from "./EmailInput";
 import { SubscribeButton } from "./SubscribeButton";
 import { SubscriptionFormProps } from "./types";
 
-export const NewsletterSubscription: React.FC<SubscriptionFormProps> = ({ onSubmit }) => {
+export const NewsletterSubscription: React.FC<SubscriptionFormProps> = () => {
     const [email, setEmail] = React.useState("");
 
     const handleSubmit = (e: React.FormEvent) => {

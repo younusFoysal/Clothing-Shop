@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import casual1 from "../../public/categories/casual1.png"
 
 const categories = [
     {
         id: 'casual',
         name: 'Casual',
-        image: '/categories/casual1.png'
+        image: casual1,
     },
     {
         id: 'formal',
@@ -60,14 +61,14 @@ export default function Categories() {
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
 
                         <Link href="#"
-                           className="group relative flex h-48 items-end overflow-hidden rounded-3xl bg-white   md:h-80">
+                           className="group relative flex h-60 items-end overflow-hidden rounded-3xl bg-white border  md:h-80">
                             <div className="absolute">
                                 <Image
                                     src={'/categories/casual1.png'}
                                     width={1000}
                                     height={1000}
                                     loading="lazy" alt="Photo by Minh Pham"
-                                    className="relative top-6 -inset-16  h-full w-full border  object-cover object-right-top transition duration-200  -scale-x-[2.5] scale-y-[2.5] "/>
+                                    className="relative top-6 -inset-16  h-full w-full border object-contain md:object-cover object-right-top transition duration-200  -scale-x-[1.4] scale-y-[1.4] md:-scale-x-[2.5] md:scale-y-[2.5]"/>
 
                             </div>
 
@@ -78,14 +79,14 @@ export default function Categories() {
                         </Link>
 
                         <Link href="#"
-                           className="group relative flex h-48 items-end overflow-hidden rounded-3xl bg-white  md:col-span-2 md:h-80">
-                            <div className="absolute">
+                           className="group relative flex h-60 items-end overflow-hidden rounded-3xl bg-white  md:col-span-2 md:h-80">
+                            <div className="absolute top-0 left-0 w-full h-full">
                                 <Image
                                     src={categories[1].image}
                                     width={1000}
                                     height={600}
                                     loading="lazy" alt="Photo by Magicle"
-                                    className="relative  top-52  left-96 inset-0 h-full w-full object-cover object-top transition duration-200 scale-150 "/>
+                                    className="relative  top-8 md:-top-20 left-52 md:left-96 inset-0 h-full w-full object-contain md:object-cover object-top transition duration-200 scale-[2] md:scale-[1.5] "/>
 
                             </div>
 
@@ -114,13 +115,13 @@ export default function Categories() {
                         </Link>
 
                         <Link href="#"
-                           className="group relative flex h-48 items-end overflow-hidden rounded-3xl bg-white  md:h-80">
+                           className="group relative flex h-60 items-end overflow-hidden rounded-3xl bg-white  md:h-80">
                             <Image
                                 src={categories[3].image}
                                 width={1000}
                                 height={1000}
                                 loading="lazy" alt="Photo by Lorenzo Herrera"
-                                className="absolute top-10 bg-white left-16 inset-0 h-full w-full  object-cover object-right  transition duration-200 scale-125 hover:scale-150"/>
+                                className="absolute top-6  md:top-10 bg-white -left-44 md:left-16 inset-0 h-full w-full object-contain md:object-cover object-right  transition duration-200 scale-[2.1]  md:scale-125 "/>
 
 
 

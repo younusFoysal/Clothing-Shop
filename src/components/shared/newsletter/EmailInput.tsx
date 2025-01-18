@@ -1,7 +1,7 @@
 import * as React from "react";
 import { EmailInputProps } from "./types";
 
-export const EmailInput: React.FC<EmailInputProps> = ({ value, onChange }) => {
+export const EmailInput: React.FC<EmailInputProps> = () => {
     return (
         <div
             className="flex justify-start items-center overflow-hidden  px-4 py-2 max-w-full bg-white rounded-[62px] text-black text-opacity-40 w-[349px]">

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { StarRatingProps } from "./types";
-import {Star, StarHalf} from "lucide-react";
 import {MdOutlineStarPurple500} from "react-icons/md";
 import {LiaStarHalf} from "react-icons/lia";
 

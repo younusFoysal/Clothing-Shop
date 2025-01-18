@@ -1,5 +1,5 @@
 "use client"
-import Hero from '@/components/Hero';
+
 import FeaturedProducts from '@/components/FeaturedProducts';
 import Categories from "@/components/categories";
 import Sponsors from "@/components/shared/Sponsors";

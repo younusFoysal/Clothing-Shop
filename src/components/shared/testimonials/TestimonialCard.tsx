@@ -1,6 +1,7 @@
 import * as React from "react";
 import { StarRating } from "./StarRating";
 import { TestimonialProps } from "./types";
+import {IoCheckmarkCircle} from "react-icons/io5";
 
 export function TestimonialCard({ author, isVerified, content, rating }: TestimonialProps) {
     return (
@@ -12,16 +13,11 @@ export function TestimonialCard({ author, isVerified, content, rating }: Testimo
                         <div className="flex gap-1 items-center self-start text-xl font-bold leading-none text-black">
                             <div className="font-semibold my-auto">{author}</div>
                             {isVerified && (
-                                <img
-                                    loading="lazy"
-                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9c5308fcbc5abfa01907dccc29a424cc4bdeaf5949d63b6bd5efd7f2b5fcad0c?placeholderIfAbsent=true&apiKey=2a8fe5aa0c1a42eb8be3c8ad2390b608"
-                                    alt="Verified user badge"
-                                    className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
-                                />
+                                <IoCheckmarkCircle className="w-6 h-6 mr-2 text-[#01AB31]" />
                             )}
                         </div>
                         <div className="mt-3 text-base font-normal leading-6 text-black text-opacity-60">
-                            "{content}”
+                            &#34;{content}”
                         </div>
                     </div>
                 </div>
