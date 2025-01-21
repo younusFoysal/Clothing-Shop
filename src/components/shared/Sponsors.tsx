@@ -3,7 +3,7 @@ import React from 'react';
 const Sponsors = () => {
     return (
         <div className=" bg-black">
-            <div className="container md:grid grid-cols-5 justify-between items-center py-11 mx-auto">
+            <div className="container flex flex-wrap  md:grid grid-cols-1 md:grid-cols-5 justify-center items-center py-11 mx-auto gap-6">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="167" height="34" viewBox="0 0 167 34" fill="none">
                         <path fillRule="evenodd" clipRule="evenodd"

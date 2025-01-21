@@ -42,18 +42,18 @@ export default function ProductCard({ product }: { product: Product }) {
                     <div className="flex items-center gap-4">
                         {product.discountPrice ? (
                             <>
-                  <span className="text-3xl font-bold">
+                  <span className="text-xl md:text-3xl font-bold">
                     ${product.discountPrice}
                   </span>
-                  <span className="text-3xl font-bold text-gray-400 line-through">
+                  <span className="text-xl md:text-3xl font-bold text-gray-400 line-through">
                     ${product.price}
                   </span>
-                  <span className="bg-red-100 text-red-600 px-4 py-1  rounded-full">
+                  <span className="text-sm md:text-xl bg-red-100 text-red-600 px-4 py-1  rounded-full">
                     -{discountPercentage}%
                   </span>
                             </>
                         ) : (
-                            <span className="text-3xl font-bold">${product.price}</span>
+                            <span className="text-xl md:text-3xl font-bold">${product.price}</span>
                         )}
                     </div>
                 </div>
