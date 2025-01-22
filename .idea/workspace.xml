@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Banner Start">
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Product details page updated">
+      <change afterPath="$PROJECT_DIR$/src/components/Faq.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProductReviews.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ReviewList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TabReviews.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/YouMightLike.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/Sponsors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Sponsors.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/products.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/products.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/testimonials.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/testimonials.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -51,24 +54,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/WebStrom Projects/AppifyDevs/clothingshop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "D:\\WebStrom Projects\\AppifyDevs\\clothingshop\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WebStrom Projects/AppifyDevs/clothingshop/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStrom Projects\\AppifyDevs\\clothingshop\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -80,6 +83,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebStrom Projects\AppifyDevs\clothingshop\src\components" />
       <recent name="D:\WebStrom Projects\AppifyDevs\clothingshop\src\data" />
     </key>
   </component>
@@ -114,7 +118,8 @@
       <workItem from="1737490990214" duration="599000" />
       <workItem from="1737491608478" duration="3456000" />
       <workItem from="1737495132824" duration="39000" />
-      <workItem from="1737495372784" duration="3821000" />
+      <workItem from="1737495372784" duration="8865000" />
+      <workItem from="1737504490581" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -220,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737228476281</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Product details page updated">
+      <option name="closed" value="true" />
+      <created>1737499411380</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1737499411380</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +253,8 @@
     <MESSAGE value="Newsletter done" />
     <MESSAGE value="Footer  done" />
     <MESSAGE value="Banner Start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Banner Start" />
+    <MESSAGE value="Product details page updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product details page updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

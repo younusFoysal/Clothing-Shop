@@ -7,6 +7,8 @@ import {useState} from "react";
 import {Size} from "@/types";
 import {useParams} from "next/navigation";
 import {FaCheck, FaMinus, FaPlus} from "react-icons/fa6";
+import YouMightlike from "@/components/YouMightLike";
+import TabReviews from "@/components/TabReviews";
 
 export default function ProductPage() {
     const {id} = useParams();
@@ -235,6 +237,11 @@ export default function ProductPage() {
 
                 </div>
             </div>
+
+            <TabReviews productdes={product.description} />
+
+            <YouMightlike/>
+
         </div>
     );
 }

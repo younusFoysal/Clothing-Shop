@@ -30,7 +30,7 @@ export const testimonials = [
     {
         "author": "Olivia P.",
         "isVerified": true,
-        "content": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+        "content": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand.",
         "rating": 4,
         "date" : "August 17, 2023"
     },
