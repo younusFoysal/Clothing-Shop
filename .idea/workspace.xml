@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Product details page updated">
-      <change afterPath="$PROJECT_DIR$/src/components/Faq.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProductReviews.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ReviewList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TabReviews.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/YouMightLike.tsx" afterDir="false" />
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="cart left part done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/cart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/testimonials.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/testimonials.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WebStrom Projects/AppifyDevs/clothingshop/src/components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WebStrom Projects/AppifyDevs/clothingshop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -120,6 +118,11 @@
       <workItem from="1737495132824" duration="39000" />
       <workItem from="1737495372784" duration="8865000" />
       <workItem from="1737504490581" duration="29000" />
+      <workItem from="1737504796566" duration="271000" />
+      <workItem from="1737528170005" duration="2411000" />
+      <workItem from="1737530791678" duration="92000" />
+      <workItem from="1737531134182" duration="128000" />
+      <workItem from="1737531277349" duration="3172000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -233,7 +236,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737499411380</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Product details page done">
+      <option name="closed" value="true" />
+      <created>1737504824710</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737504824710</updated>
+    </task>
+    <task id="LOCAL-00016" summary="build fix">
+      <option name="closed" value="true" />
+      <created>1737505077649</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1737505077649</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +273,10 @@
     <MESSAGE value="Footer  done" />
     <MESSAGE value="Banner Start" />
     <MESSAGE value="Product details page updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product details page updated" />
+    <MESSAGE value="Product details page done" />
+    <MESSAGE value="build fix" />
+    <MESSAGE value="cart left part done" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart left part done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

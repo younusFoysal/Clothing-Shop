@@ -9,6 +9,7 @@ import {useParams} from "next/navigation";
 import {FaCheck, FaMinus, FaPlus} from "react-icons/fa6";
 import YouMightlike from "@/components/YouMightLike";
 import TabReviews from "@/components/TabReviews";
+import toast, {Toaster} from "react-hot-toast";
 
 export default function ProductPage() {
     const {id} = useParams();
@@ -28,9 +29,16 @@ export default function ProductPage() {
         : 0;
 
     const handleAddToCart = () => {
+        const productToAdd = {
+            ...product,
+            selectedColor,
+            selectedSize,
+        };
+
         for (let i = 0; i < quantity; i++) {
-            addToCart(product);
+            addToCart(productToAdd);
         }
+        toast.success("Added to cart");
     };
 
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -134,6 +142,7 @@ export default function ProductPage() {
                         </div>
 
                     </div>
+                    <Toaster/>
 
                     <div className="space-y-4">
                         {/*<h3 className="font-semibold">Product Details</h3>*/}
