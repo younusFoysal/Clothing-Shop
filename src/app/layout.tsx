@@ -27,7 +27,7 @@ export default function RootLayout({
             <NavOffer />
             <Navigation/>
             {/*<Navbar />*/}
-            <main className="min-h-screen pt-16 mb-20">{children}</main>
+            <main className="min-h-screen pt-0 mb-20">{children}</main>
             <FooterMain />
         </CartProvider>
         </body>

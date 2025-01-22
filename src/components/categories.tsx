@@ -27,7 +27,7 @@ const categories = [
 
 export default function Categories() {
     return (
-        <section className="container mx-auto px-4 pt-10 pb-10">
+        <section className="container mx-auto mt-10 px-4 pt-10 pb-10">
             {/*<div className="grid md:grid-cols-3 gap-6">*/}
             {/*    {categories.map((category) => (*/}
             {/*        <Link*/}
@@ -52,9 +52,10 @@ export default function Categories() {
 
             <div className="bg-[#F0F0F0] h-full rounded-3xl py-6 sm:py-8 lg:py-14">
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    <div className="mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12">
+
+                    <div className=" flex items-center justify-center gap-8 mb-8 mt-4 md:mt-0 md:mb-16">
                         <div className="flex justify-center items-center">
-                            <h2 className="text-2xl text-center font-bold text-black lg:text-4xl " style={{ fontFamily: 'IntegralCF, sans-serif' }}>BROWSE BY DRESS STYLE</h2>
+                            <h2 className="text-4xl text-center font-bold text-black lg:text-4xl " style={{ fontFamily: 'IntegralCF, sans-serif' }}>BROWSE BY DRESS STYLE</h2>
                         </div>
                     </div>
 
@@ -75,7 +76,7 @@ export default function Categories() {
 
 
                             <span
-                                className="relative bottom-60 left-4 ml-10 mb-3 inline-block font-bold text-black md:ml-5 text-3xl ">Casual</span>
+                                className="relative bottom-40 md:bottom-60 md:left-4 ml-10 mb-3 inline-block font-bold text-black md:ml-5 text-3xl ">Casual</span>
                         </Link>
 
                         <Link href="#"
@@ -94,24 +95,24 @@ export default function Categories() {
 
 
                             <span
-                                className="relative bottom-60 left-4 ml-10 mb-3 inline-block font-bold text-black md:ml-5 text-3xl ">Formal</span>
+                                className="relative bottom-40 md:bottom-60 md:left-4 ml-10 mb-3 inline-block font-bold text-black md:ml-5 text-3xl ">Formal</span>
                         </Link>
 
                         <Link href="#"
-                           className="group relative flex h-48 items-end overflow-hidden rounded-3xl bg-white  md:col-span-2 md:h-80">
+                           className="group relative flex h-60 items-end overflow-hidden rounded-3xl bg-white  md:col-span-2 md:h-80">
                             <Image
                                 src={categories[2].image}
                                 width={1000}
                                 height={600}
                                 loading="lazy" alt="Photo by Martin Sanchez"
-                                className="absolute left-24 inset-0 h-full w-full object-cover  transition duration-200 scale-110 "/>
+                                className="absolute left-24 -inset-8 md:inset-0 h-full w-full object-cover  transition duration-200 scale-110 "/>
 
                             {/*<div*/}
                             {/*    className="pointer-events-none absolute inset-0 group-hover:bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">*/}
                             {/*</div>*/}
 
                             <span
-                                className="relative bottom-60 left-6 ml-10 mb-3 inline-block font-bold text-black md:ml-5 text-3xl">Party</span>
+                                className="relative bottom-40 md:bottom-60 md:left-6 ml-10 mb-3 inline-block font-bold text-black md:ml-5 text-3xl">Party</span>
                         </Link>
 
                         <Link href="#"
@@ -126,7 +127,7 @@ export default function Categories() {
 
 
                             <span
-                                className="relative bottom-60 left-4 ml-10 mb-3 inline-block font-bold text-black md:ml-5 text-3xl ">Gym</span>
+                                className="relative bottom-40 md:bottom-60 md:left-4 ml-10 mb-3 inline-block font-bold text-black md:ml-5 text-3xl ">Gym</span>
                         </Link>
 
                     </div>

@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="shopping cart done">
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="All product Page filter card done">
+      <change afterPath="$PROJECT_DIR$/public/HomeBanner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/HomeBanner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Banner.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/categories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/newsletter/EmailInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/newsletter/EmailInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/newsletter/NewsletterSubscription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/newsletter/NewsletterSubscription.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/newsletter/SubscribeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/newsletter/SubscribeButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +133,10 @@
       <workItem from="1737528170005" duration="2411000" />
       <workItem from="1737530791678" duration="92000" />
       <workItem from="1737531134182" duration="128000" />
-      <workItem from="1737531277349" duration="6029000" />
+      <workItem from="1737531277349" duration="6729000" />
+      <workItem from="1737539700866" duration="7247000" />
+      <workItem from="1737576177889" duration="2259000" />
+      <workItem from="1737579494933" duration="5198000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -264,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737535768961</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="All product Page filter card done">
+      <option name="closed" value="true" />
+      <created>1737537935166</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737537935166</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +315,8 @@
     <MESSAGE value="build fix" />
     <MESSAGE value="cart left part done" />
     <MESSAGE value="shopping cart done" />
-    <option name="LAST_COMMIT_MESSAGE" value="shopping cart done" />
+    <MESSAGE value="All product Page filter card done" />
+    <option name="LAST_COMMIT_MESSAGE" value="All product Page filter card done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

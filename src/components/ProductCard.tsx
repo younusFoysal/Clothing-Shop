@@ -20,7 +20,7 @@ export default function ProductCard({ product }: { product: Product }) {
                     alt={product?.name}
                     height={800}
                     width={800}
-                    className="object-cover h-[298px] w-[295px] rounded-lg group-hover:opacity-90 transition-opacity"
+                    className="object-cover h-[174px] w-[174px] md:h-[298px] md:w-[295px] rounded-lg group-hover:opacity-90 transition-opacity"
                 />
             </Link>
             <h3 className="font-semibold mb-2">
@@ -42,18 +42,18 @@ export default function ProductCard({ product }: { product: Product }) {
                     <div className="flex items-center gap-4">
                         {product.discountPrice ? (
                             <>
-                  <span className="text-xl md:text-3xl font-bold">
+                  <span className="text-xl md:text-2xl font-bold">
                     ${product.discountPrice}
                   </span>
-                  <span className="text-xl md:text-3xl font-bold text-gray-400 line-through">
+                  <span className="text-xl md:text-2xl font-bold text-gray-400 line-through">
                     ${product.price}
                   </span>
-                  <span className="text-sm md:text-xl bg-red-100 text-red-600 px-4 py-1  rounded-full">
+                  <span className="text-sm md:text-lg bg-red-100 text-red-600 px-4 py-1  rounded-full">
                     -{discountPercentage}%
                   </span>
                             </>
                         ) : (
-                            <span className="text-xl md:text-3xl font-bold">${product.price}</span>
+                            <span className="text-xl md:text-2xl font-bold">${product.price}</span>
                         )}
                     </div>
                 </div>

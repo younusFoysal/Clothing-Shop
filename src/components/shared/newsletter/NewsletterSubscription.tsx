@@ -16,7 +16,7 @@ export const NewsletterSubscription: React.FC<SubscriptionFormProps> = () => {
             <div className="self-stretch my-auto text-4xl font-bold leading-10 text-white w-[551px] max-md:max-w-full" style={{fontFamily: 'IntegralCF, sans-serif'}}>
                 STAY UPTO DATE ABOUT OUR LATEST OFFERS
             </div>
-            <form onSubmit={handleSubmit} className="flex flex-col self-stretch my-auto text-base min-w-[240px] w-[349px]">
+            <form onSubmit={handleSubmit} className="flex flex-col self-stretch my-auto text-base md:min-w-[240px] w-full md:w-[349px]">
                 <EmailInput value={email} onChange={setEmail} />
                 <SubscribeButton />
             </form>

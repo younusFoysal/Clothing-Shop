@@ -13,7 +13,7 @@ export default function FooterMain() {
             <div className="absolute">
             </div>
 
-            <div className="relative -top-24">
+            <div className="relative -top-24 p-4">
                 <NewsletterSubscription />
             </div>
 
