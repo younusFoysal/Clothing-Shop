@@ -76,7 +76,7 @@ export default function ProductPage() {
                     <div className="relative aspect-square flex-1">
                         {/* For Desktop: Zoom effect */}
                         <div
-                            className="hidden md:block group w-[444px] h-[530px] rounded-lg overflow-hidden"
+                            className="hidden md:block group w-full h-[530px] rounded-lg overflow-hidden"
                             onMouseMove={handleMouseMove}
                             style={{
                                 backgroundImage: zoomStyle.backgroundImage,
@@ -90,7 +90,7 @@ export default function ProductPage() {
                                 alt={product.name}
                                 width={444}
                                 height={530}
-                                className="object-cover rounded-lg group-hover:opacity-0 transition-opacity"
+                                className="object-cover w-full h-full rounded-lg group-hover:opacity-0 transition-opacity"
                             />
                         </div>
 

@@ -32,14 +32,14 @@ const ReviewList: FC = () => {
 
                             <select
                                 onChange={(e) => handleSortChange(e.target.value)}
-                                className="bg-[#F0F0F0] border-0 pl-6 pr-0 py-2 font-medium rounded-full text-md"
+                                className="bg-[#F0F0F0] hidden md:block border-0 pl-6 pr-0 py-2 font-medium rounded-full text-md"
                             >
                                 <option value="Latest">Latest</option>
                                 <option value="Highest Rating">Highest Rating</option>
                                 <option value="Lowest Rating">Lowest Rating</option>
                             </select>
                         </div>
-                        <button className="px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800">
+                        <button className="px-4 py-3 md:py-2 bg-black text-sm text-white rounded-full hover:bg-gray-800">
                             Write a Review
                         </button>
                     </div>
@@ -61,7 +61,7 @@ const ReviewList: FC = () => {
 
             <div className="flex justify-center items-center">
                 <Link href="/products"
-                      className="border text-center border-gray-300 bg-white duration-300 hover:bg-black  hover:text-white hover:shadow-xl hover:border-black font-medium py-4 px-12 rounded-full mt-9 mx-auto items-center w-full min-w-[230px] md:w-60">
+                      className="border text-center border-gray-300 bg-white duration-300 hover:bg-black  hover:text-white hover:shadow-xl hover:border-black font-medium py-4 px-12 rounded-full mt-9 mx-auto items-center  min-w-[230px] md:w-60">
                     <span className="satoshi-regular duration-300 ">Load More Reviews</span>
                 </Link>
 

@@ -39,12 +39,15 @@ const PRODUCTS_PER_PAGE = 9;
 
 export default function ProductsPage() {
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
-    const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
     const [selectedColors, setSelectedColors] = useState<string[]>([]);
     const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
     const [selectedStyles, setSelectedStyles] = useState<string[]>([]);
     const [sortBy, setSortBy] = useState<SortOption>('price-high');
     const [currentPage, setCurrentPage] = useState(1);
+    const [priceRange, setPriceRange] = useState([50, 400]);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
 
     const toggleType = (type: string) => {
         setSelectedTypes(prev =>
@@ -127,19 +130,36 @@ export default function ProductsPage() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     };
 
+    const handleMinChange = (e : React.ChangeEvent<HTMLInputElement>) => {
+        const newMin = Math.min(Number(e.target.value), priceRange[1]);
+        setPriceRange([newMin, priceRange[1]]);
+    };
+
+    const handleMaxChange = (e : React.ChangeEvent<HTMLInputElement>) => {
+        const newMax = Math.max(Number(e.target.value), priceRange[0]);
+        setPriceRange([priceRange[0], newMax]);
+    };
+
+
+
+
     return (
         <div className="container mx-auto px-4 py-8 pb-24">
             {/*<h1 className="text-3xl font-bold mb-8">Our Products</h1>*/}
             <div className="flex flex-col md:flex-row gap-8">
 
                 {/* Filters Sidebar */}
-                <div className="w-full h-full md:w-64 space-y-6 px-5 py-6 border rounded-2xl">
+                <div className={` md:block transition-all w-full h-full md:w-64 space-y-6 px-5 py-6 border rounded-2xl ${
+                    isMenuOpen
+                        ? 'opacity-100 block shadow-lg'
+                        : 'top-14 opacity-0 md:opacity-100 hidden'
+                }`}>
                     {/* ... (previous filter code remains the same) ... */}
                     {/* Cloth Type */}
                     <div className="space-y-3">
                         <div className="flex justify-between">
                             <h3 className="font-semibold">Filters</h3>
-                            <button className="opacity-40">
+                            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="opacity-40 hover:opacity-100 hover:text-black">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
                                     <path
@@ -172,37 +192,88 @@ export default function ProductsPage() {
 
                     {/* Price Range */}
                     <div className="space-y-3">
-                        {/*<h3 className="font-semibold">Price</h3>*/}
-                        <div className="flex justify-between">
+                        {/* Title and Collapse Icon */}
+                        <div className="flex justify-between items-center">
                             <h3 className="font-semibold">Price</h3>
-                            <button className="">
+                            <button>
                                 <FaChevronUp className="mr-1"/>
                             </button>
                         </div>
+
+                        {/* Range Slider */}
                         <div className="space-y-4">
-                            <div className="flex gap-4">
+                            <div className="relative w-full">
+                                {/* Range Slider Track */}
+                                <div className="h-1 bg-gray-300 rounded-full"></div>
+
+                                {/* Selected Range */}
+                                <div
+                                    className="absolute h-1 -top-0 bg-black rounded-full"
+                                    style={{
+                                        left: `${(priceRange[0] / 500) * 100}%`,
+                                        right: `${100 - (priceRange[1] / 500) * 100}%`,
+                                    }}
+                                ></div>
+
+                                {/* Min Handle */}
                                 <input
-                                    type="number"
+                                    type="range"
+                                    min="0"
+                                    max="500"
                                     value={priceRange[0]}
-                                    onChange={e => {
-                                        setPriceRange([Number(e.target.value), priceRange[1]]);
-                                        setCurrentPage(1);
+                                    onChange={handleMinChange}
+                                    className="absolute -top-1.5 w-full appearance-none bg-transparent pointer-events-auto"
+                                    style={{
+                                        zIndex: priceRange[0] === priceRange[1] ? "2" : "1", // Ensures handles are not stacked
                                     }}
-                                    className="w-full px-3 py-2 border rounded-lg"
-                                    placeholder="Min"
                                 />
+
+                                {/* Max Handle */}
                                 <input
-                                    type="number"
+                                    type="range"
+                                    min="0"
+                                    max="500"
                                     value={priceRange[1]}
-                                    onChange={e => {
-                                        setPriceRange([priceRange[0], Number(e.target.value)]);
-                                        setCurrentPage(1);
-                                    }}
-                                    className="w-full px-3 py-2 border rounded-lg"
-                                    placeholder="Max"
+                                    onChange={handleMaxChange}
+                                    className="absolute -top-1.5 w-full  appearance-none bg-transparent pointer-events-auto"
                                 />
                             </div>
+
+                            {/* Price Labels */}
+                            <div className="flex justify-between text-sm">
+                                <span>${priceRange[0]}</span>
+                                <span>${priceRange[1]}</span>
+                            </div>
                         </div>
+
+                        {/* Custom Styles for Black Slide Input range type */}
+                        <style jsx>{`
+                            input[type="range"]::-webkit-slider-thumb {
+                                appearance: none;
+                                height: 16px;
+                                width: 16px;
+                                background-color: black;
+                                border-radius: 50%;
+                                cursor: pointer;
+                            }
+
+                            input[type="range"]::-moz-range-thumb {
+                                height: 16px;
+                                width: 16px;
+                                background-color: black;
+                                border-radius: 50%;
+                                cursor: pointer;
+                            }
+
+                            input[type="range"]::-ms-thumb {
+                                height: 16px;
+                                width: 16px;
+                                background-color: black;
+                                border-radius: 50%;
+                                cursor: pointer;
+                            }
+                        `}</style>
+
                     </div>
 
                     <hr className="border-gray-300 "/>
@@ -334,7 +405,7 @@ export default function ProductsPage() {
 
 
                         <div className="flex items-center">
-                            <span className="text-black items-center text-center  font-bold text-2xl">
+                            <span className="text-black items-center text-center  font-bold text-3xl">
                             Casual
                         </span>
                         </div>
@@ -361,7 +432,9 @@ export default function ProductsPage() {
                                     className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none text-gray-500"
                                     size={16}/>
                             </div>
-                            <button className="md:hidden  p-4 bg-[#F0F0F0] rounded-full">
+                            <button
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                className="md:hidden  p-4 bg-[#F0F0F0] rounded-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
                                     <path

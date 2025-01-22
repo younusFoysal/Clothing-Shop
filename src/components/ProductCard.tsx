@@ -14,7 +14,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
     return (
         <div className="group">
-            <Link href={`/products/${product.id}`} className="block relative aspect-square mb-4">
+            <Link href={`/products/${product.id}`} className="block  mb-4">
                 <Image
                     src={product?.image}
                     alt={product?.name}
