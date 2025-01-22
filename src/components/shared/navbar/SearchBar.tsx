@@ -11,7 +11,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ placeholder }) => {
             <input
                 type="search"
                 placeholder={placeholder}
-                className="bg-transparent border-none outline-none flex-1"
+                className="bg-transparent border-0 outline-none ring-0 flex-1 focus:ring-0 "
                 aria-label={placeholder}
             />
         </div>
