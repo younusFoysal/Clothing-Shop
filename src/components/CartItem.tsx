@@ -45,7 +45,7 @@ export default function CartItem({ item }: CartItemProps) {
                             className="p-1 hover:bg-gray-100 rounded-full"
                             onClick={() => removeFromCart(item.id)}
                         >
-                            <RiDeleteBinFill  size={20}/>
+                            <RiDeleteBinFill className="text-red-500" size={25}/>
                         </button>
                     </div>
 
