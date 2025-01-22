@@ -116,7 +116,7 @@ const Faq = () => {
                                 </summary>
                                 <p className="group-open:animate-fadeIn mt-3 text-neutral-600">If you need help with our
                                     platform or
-                                    have any other questions, you can contact the company's support team by submitting a
+                                    have any other questions, you can contact the company&#39;s support team by submitting a
                                     support
                                     request through the website or by emailing support@ourwebsite.com.
                                 </p>
@@ -139,7 +139,7 @@ const Faq = () => {
                                     promotions
                                     from time to time. To stay up-to-date on the latest deals and special offers, you
                                     can sign
-                                    up for the company's newsletter or follow it on social media.
+                                    up for the company&#39;s newsletter or follow it on social media.
                                 </p>
                             </details>
                         </div>

@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import ReviewList from "./ReviewList";
 import Faq from "@/components/Faq";
 
-const TabReviews = ({productdes}) => {
+type TabReviewsProps = {
+    productdes: string;
+};
+
+const TabReviews = ({productdes} : TabReviewsProps) => {
     const [activeTab, setActiveTab] = useState("Rating & Reviews");
 
     const handleTabClick = (tab: string) => {

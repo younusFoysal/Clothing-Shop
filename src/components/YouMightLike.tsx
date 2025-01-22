@@ -1,7 +1,6 @@
 import React from 'react';
 
 import ProductCard from "@/components/ProductCard";
-import Link from "next/link";
 import {topProducts} from "@/data/topProducts";
 const featuredProducts = topProducts.slice(0, 4);
 
