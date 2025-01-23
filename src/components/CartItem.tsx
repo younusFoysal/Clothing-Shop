@@ -50,7 +50,7 @@ export default function CartItem({ item }: CartItemProps) {
 
                     <div>
                         <h3 className="font-light"> <span className="font-medium"> Size:   </span> {item?.selectedSize.charAt(0).toUpperCase() + item.selectedSize.slice(1)}</h3>
-                        <h3 className="font-light"> <span className="font-medium"> Color:   </span>  {getColorName(item?.selectedColor).charAt(0).toUpperCase() + getColorName(item.selectedColor).slice(1)}
+                        <h3 className="font-light"> <span className="font-medium"> Color:   </span>  {item?.selectedColor.charAt(0).toUpperCase() + getColorName(item.selectedColor).slice(1)}
                         </h3>
 
                     </div>

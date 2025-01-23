@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/cart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="build fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +118,7 @@
       <workItem from="1737531277349" duration="6729000" />
       <workItem from="1737539700866" duration="7247000" />
       <workItem from="1737576177889" duration="2259000" />
-      <workItem from="1737579494933" duration="13156000" />
+      <workItem from="1737579494933" duration="13512000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -323,7 +320,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737591506237</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="build fix">
+      <option name="closed" value="true" />
+      <created>1737592983284</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1737592983284</updated>
+    </task>
+    <task id="LOCAL-00027" summary="build fix">
+      <option name="closed" value="true" />
+      <created>1737593314784</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1737593314784</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +358,6 @@
     <MESSAGE value="Banner Start" />
     <MESSAGE value="Product details page updated" />
     <MESSAGE value="Product details page done" />
-    <MESSAGE value="build fix" />
     <MESSAGE value="cart left part done" />
     <MESSAGE value="shopping cart done" />
     <MESSAGE value="All product Page filter card done" />
@@ -355,7 +367,8 @@
     <MESSAGE value="Ready for build" />
     <MESSAGE value="Readme updated" />
     <MESSAGE value="Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done" />
+    <MESSAGE value="build fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="build fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
