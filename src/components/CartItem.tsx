@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import {  X } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 import namer from 'color-namer';
 import {FaMinus, FaPlus} from "react-icons/fa6";
@@ -7,14 +6,13 @@ import {RiDeleteBinFill} from "react-icons/ri";
 
 interface CartItemProps {
     item: {
-        selectedColor: string;
-        selectedSize: string;
         id: string;
         name: string;
         price: number;
         image: string;
         quantity: number;
-
+        selectedColor: string;
+        selectedSize: string;
     };
 }
 

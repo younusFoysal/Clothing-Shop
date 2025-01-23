@@ -44,7 +44,7 @@ export default function ProductsPage() {
     const [selectedStyles, setSelectedStyles] = useState<string[]>([]);
     const [sortBy, setSortBy] = useState<SortOption>('price-high');
     const [currentPage, setCurrentPage] = useState(1);
-    const [priceRange, setPriceRange] = useState([50, 400]);
+    const [priceRange, setPriceRange] = useState([0, 400]);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 

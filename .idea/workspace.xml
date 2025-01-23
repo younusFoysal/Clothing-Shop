@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Products Page Filter card responsive done">
-      <change beforePath="$PROJECT_DIR$/src/components/shared/navbar/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/navbar/SearchBar.tsx" afterDir="false" />
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Ready for build">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/cart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +126,7 @@
       <workItem from="1737531277349" duration="6729000" />
       <workItem from="1737539700866" duration="7247000" />
       <workItem from="1737576177889" duration="2259000" />
-      <workItem from="1737579494933" duration="9136000" />
+      <workItem from="1737579494933" duration="10808000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -290,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737588480574</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Input ring fix">
+      <option name="closed" value="true" />
+      <created>1737588838083</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1737588838083</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +332,9 @@
     <MESSAGE value="All product Page filter card done" />
     <MESSAGE value="Home page Responsive done" />
     <MESSAGE value="Products Page Filter card responsive done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Products Page Filter card responsive done" />
+    <MESSAGE value="Input ring fix" />
+    <MESSAGE value="Ready for build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ready for build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

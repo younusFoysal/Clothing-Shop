@@ -10,6 +10,8 @@ export interface Product {
     sizes: string[];
     type: string;
     style: string;
+    selectedSize?: string;
+    selectedColor?: string;
 }
 
 export type Size = 'small' | 'medium' | 'large' | 'x-large';

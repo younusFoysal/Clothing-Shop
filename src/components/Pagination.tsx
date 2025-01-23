@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+
 import {FaArrowLeft} from "react-icons/fa";
 import {FaArrowRight} from "react-icons/fa6";
 
