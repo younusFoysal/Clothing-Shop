@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Ready for build">
-      <change afterPath="$PROJECT_DIR$/images/design.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="5615139e-6154-4d40-b031-29b31a606a3f" name="Changes" comment="Done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/cart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <workItem from="1737531277349" duration="6729000" />
       <workItem from="1737539700866" duration="7247000" />
       <workItem from="1737576177889" duration="2259000" />
-      <workItem from="1737579494933" duration="11194000" />
+      <workItem from="1737579494933" duration="13156000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -307,7 +307,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737590508051</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Readme updated">
+      <option name="closed" value="true" />
+      <created>1737590982685</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1737590982685</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Done">
+      <option name="closed" value="true" />
+      <created>1737591506237</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1737591506237</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +353,9 @@
     <MESSAGE value="Products Page Filter card responsive done" />
     <MESSAGE value="Input ring fix" />
     <MESSAGE value="Ready for build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready for build" />
+    <MESSAGE value="Readme updated" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

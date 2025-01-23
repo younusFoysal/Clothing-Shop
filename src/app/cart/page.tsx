@@ -1,20 +1,31 @@
-"use client"
-import CartItem from '@/components/CartItem';
-import {useCart} from '@/context/CartContext';
-import {useEffect, useState} from 'react';
-import {FiTag} from "react-icons/fi";
-import {FaArrowRight} from "react-icons/fa6";
+"use client";
+import CartItem from "@/components/CartItem";
+import { useCart } from "@/context/CartContext";
+import { useEffect, useState } from "react";
+import { FiTag } from "react-icons/fi";
+import { FaArrowRight } from "react-icons/fa6";
+
+interface CartItemType {
+    id: string;
+    name: string;
+    price: number;
+    discountPrice: number;
+    image: string;
+    quantity: number;
+    selectedColor?: string;
+    selectedSize?: string;
+}
 
 export default function CartPage() {
-    const {items} = useCart();
-    const [cartTotal, setCartTotal] = useState(0);
+    const { items } = useCart() as { items: CartItemType[] };
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [cartTotal, setCartTotal] = useState<number>(0);
 
     useEffect(() => {
         const newTotal = items.reduce((acc, item) => acc + item.price * item.quantity, 0);
         setCartTotal(newTotal);
     }, [items]);
 
-    console.log(cartTotal);
 
     if (items.length === 0) {
         return (
@@ -24,12 +35,12 @@ export default function CartPage() {
             </div>
         );
     }
-    console.log(items)
 
     const subtotal = items.reduce((acc, item) => acc + item.price * item.quantity, 0);
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    const discount = items.reduce((acc, item) => acc + (item.price - item.discountPrice) * item.quantity, 0);
+    const discount = items.reduce(
+        (acc, item) => acc + (item.price - item.discountPrice) * item.quantity,
+        0
+    );
     const discountPercentage = ((discount / subtotal) * 100).toFixed(2);
     const deliveryFee = subtotal > 100 ? 0 : 10;
     const grandTotal = subtotal - discount + deliveryFee;
@@ -38,7 +49,7 @@ export default function CartPage() {
         <div className="container mx-auto px-4 py-8 pb-20">
             <h1 className="text-3xl font-bold mb-8">Shopping Cart</h1>
             <div className="grid md:grid-cols-3 gap-8">
-                <div className="md:col-span-2  border rounded-2xl overflow-hidden">
+                <div className="md:col-span-2 border rounded-2xl overflow-hidden">
                     {items.map((item) => (
                         <CartItem
                             key={item.id}
@@ -48,8 +59,8 @@ export default function CartPage() {
                                 price: item.price,
                                 image: item.image,
                                 quantity: item.quantity,
-                                selectedColor: item.selectedColor as string,
-                                selectedSize: item.selectedSize as string,
+                                selectedColor: item.selectedColor || "",
+                                selectedSize: item.selectedSize || "",
                             }}
                         />
                     ))}
@@ -71,7 +82,7 @@ export default function CartPage() {
                             <span className="font-bold text-lg">${deliveryFee.toFixed(2)}</span>
                         </div>
 
-                        <hr className="border-gray-300 mt-2 pt-2"/>
+                        <hr className="border-gray-300 mt-2 pt-2" />
 
                         <div className="flex justify-between font-medium">
                             <span>Total</span>
@@ -79,11 +90,9 @@ export default function CartPage() {
                         </div>
                     </div>
 
-
                     <div className="flex items-center gap-2 pt-1 mb-6">
-
-                        <div className="flex items-center bg-[#F0F0F0] rounded-full px-4  w-full max-w-md">
-                            <FiTag className="text-gray-500 text-xl"/>
+                        <div className="flex items-center bg-[#F0F0F0] rounded-full px-4 w-full max-w-md">
+                            <FiTag className="text-gray-500 text-xl" />
                             <input
                                 type="text"
                                 placeholder="Add promo code"
@@ -91,15 +100,13 @@ export default function CartPage() {
                             />
                         </div>
 
-
                         <button className="bg-black text-white rounded-full px-6 py-2 font-medium">
                             Apply
                         </button>
                     </div>
 
-
                     <button className="w-full flex gap-2 justify-center items-center bg-black text-white py-3 rounded-full hover:bg-gray-800">
-                        Go to Checkout <FaArrowRight  />
+                        Go to Checkout <FaArrowRight />
                     </button>
                 </div>
             </div>
