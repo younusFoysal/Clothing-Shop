@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image';
 import { useCart } from '@/context/CartContext';
-import namer from 'color-namer';
 import {FaMinus, FaPlus} from "react-icons/fa6";
 import {RiDeleteBinFill} from "react-icons/ri";
 
@@ -20,10 +19,10 @@ interface CartItemProps {
 export default function CartItem({ item }: CartItemProps) {
     const { updateQuantity, removeFromCart } = useCart();
 
-    const getColorName = (hex: string) => {
-        const namedColor = namer(hex);
-        return namedColor.roygbiv[0]?.name || hex;
-    };
+    // const getColorName = (hex: string) => {
+    //     const namedColor = namer(hex);
+    //     return namedColor.roygbiv[0]?.name || hex;
+    // };
 
     return (
         <div className="border-b-2 mx-4">
@@ -49,8 +48,8 @@ export default function CartItem({ item }: CartItemProps) {
                     </div>
 
                     <div>
-                        <h3 className="font-light"> <span className="font-medium"> Size:   </span> {item?.selectedSize.charAt(0).toUpperCase() + item.selectedSize.slice(1)}</h3>
-                        <h3 className="font-light"> <span className="font-medium"> Color:   </span>  {item?.selectedColor.charAt(0).toUpperCase() + item.selectedColor.slice(1)}
+                        <h3 className="font-light"> <span className="font-medium"> Size:   </span> {item?.selectedSize.charAt(0).toUpperCase() + item?.selectedSize.slice(1)}</h3>
+                        <h3 className="font-light"> <span className="font-medium"> Color:   </span>  {item?.selectedColor.charAt(0).toUpperCase() + item?.selectedColor.slice(1)}
                         </h3>
 
                     </div>
