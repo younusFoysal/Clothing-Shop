@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import { useCart } from '@/context/CartContext';
 import namer from 'color-namer';
@@ -29,8 +30,8 @@ export default function CartItem({ item }: CartItemProps) {
             <div className="flex gap-4 py-4 bg-white  rounded-tl-xl rounded-tr-xl  rounded-lg overflow-hidden">
                 <div className="relative h-[124px] w-[124px] aspect-square">
                     <Image
-                        src={item.image}
-                        alt={item.name}
+                        src={item?.image}
+                        alt={item?.name}
                         height={124}
                         width={124}
                         className="object-cover object-center h-[124px] w-[124px] rounded-lg"
@@ -38,25 +39,25 @@ export default function CartItem({ item }: CartItemProps) {
                 </div>
                 <div className="flex-1">
                     <div className="flex justify-between">
-                        <h3 className="font-semibold">{item.name}</h3>
+                        <h3 className="font-semibold">{item?.name}</h3>
                         <button
                             className="p-1 hover:bg-gray-100 rounded-full"
-                            onClick={() => removeFromCart(item.id)}
+                            onClick={() => removeFromCart(item?.id)}
                         >
                             <RiDeleteBinFill className="text-red-500" size={25}/>
                         </button>
                     </div>
 
                     <div>
-                        <h3 className="font-light"> <span className="font-medium"> Size:   </span> {item.selectedSize.charAt(0).toUpperCase() + item.selectedSize.slice(1)}</h3>
-                        <h3 className="font-light"> <span className="font-medium"> Color:   </span>  {getColorName(item.selectedColor).charAt(0).toUpperCase() + getColorName(item.selectedColor).slice(1)}
+                        <h3 className="font-light"> <span className="font-medium"> Size:   </span> {item?.selectedSize.charAt(0).toUpperCase() + item.selectedSize.slice(1)}</h3>
+                        <h3 className="font-light"> <span className="font-medium"> Color:   </span>  {getColorName(item?.selectedColor).charAt(0).toUpperCase() + getColorName(item.selectedColor).slice(1)}
                         </h3>
 
                     </div>
 
                     <div className="flex justify-between">
                         <div>
-                            <p className="text-black text-xl md:text-2xl font-bold mt-2">${item.price}</p>
+                            <p className="text-black text-xl md:text-2xl font-bold mt-2">${item?.price}</p>
                         </div>
                         <div>
                             <div className="flex items-center gap-4">
