@@ -95,14 +95,14 @@ export default function ProductPage() {
                         </div>
 
                         {/* For Mobile: Static image */}
-                        <div className="block md:hidden w-full h-full relative  rounded-lg overflow-hidden">
+                        <div className="block md:hidden w-full h-[300px] relative  rounded-lg overflow-hidden">
                             <Image
                                 src={mainImage}
                                 alt={product.name}
                                 fill
                                 sizes="100vw"
                                 priority
-                                className="object-cover rounded-lg"
+                                className="object-contain scale-[1.5] border-2 border-black p-3 rounded-xl drop-shadow-md "
                             />
                         </div>
                     </div>
